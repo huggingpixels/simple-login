@@ -41,8 +41,7 @@ margin-bottom: 26px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background-color: red;
-  background-image: linear-gradient(45deg,red,#08ac4b);
+  background-color: rgb(210, 45, 39);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -52,6 +51,9 @@ margin-bottom: 26px;
   transition: all 0.3 ease;
   cursor: pointer;
 }
+.form p {
+  color: #FFFFFF;
+}
 .container {
   position: relative;
   z-index: 1;
@@ -60,7 +62,7 @@ margin-bottom: 26px;
 }
 
 body {
-  background-color: red;
+  background-color: rgb(210, 45, 39);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

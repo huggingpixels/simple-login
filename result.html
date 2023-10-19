@@ -2,16 +2,35 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<title> Hello world! </title>
+<title>LastPasta homework</title>
 </head>
+<script>
+function displayText() {
+    const copiedText = document.getElementById("copied-text");
+    copiedText.style.color = "white";
+}
+
+function copy() {
+  const copyText = document.getElementById("result");
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+  const copiedText = document.getElementById("copied-text");
+  copiedText.style.color = "grey";
+  setTimeout(displayText, 1200);
+}
+</script>
 <body>
   <body>
     <div class="login-page">
       <div class="form">
         <div class="login">
           <div class="login-header">
-            <h3>LOGIN</h3>
-            <p>Please enter your credentials to login.</p>
+            <h3>Your Environment is ready to start!</h3>
+            <div>
+                <input disabled type="text" value="Hello World" id="result">
+                <button onclick="copy()" id="copy-button">Copy id to clipboard</button>
+                <p id="copied-text">Copied!</p>
+            </div>
           </div>
         </div>
       </div>
